@@ -18,6 +18,27 @@ body {
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.mt-1 {
+  margin-top: 10px;
+}
+
 header {
   background-color: antiquewhite;
   padding: 12px;
@@ -31,9 +52,59 @@ header {
 .card {
   border: 1px solid black;
   padding: 12px;
+  margin-top: 16px;
 }
 
 .card:hover {
   background-color: aliceblue;
+}
+
+.blog-view-container {
+  border: 1px solid black;
+  width: 80%;
+  margin: 70px auto;
+  padding: 12px;
+}
+
+.blog-view-content {
+  margin-top: 20px;
+}
+
+.comment-container {
+  margin-top: 16px;
+}
+
+.comment-container > div {
+  margin-top: 10px;
+}
+
+.comment {
+  background-color: aliceblue;
+  padding: 8px;
+  margin-bottom: 6px;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 6px;
+}
+
+.comment-create-container {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 2px dashed lightgray;
+}
+
+.cus-btn {
+  border: none;
+  padding: 6px 8px;
+  border-radius: 6px;
+  background-color: antiquewhite;
+  border: 1px solid antiquewhite;
+}
+
+.cus-btn:hover:not(:disabled) {
+  background-color: #FCDC94;
 }
 

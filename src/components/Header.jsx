@@ -1,10 +1,12 @@
-
+import { Link } from "react-router-dom";
 
 function Header() {
 
     return (
         <header>
-            <h1>The Cool Blog</h1>
+            <Link to="/">
+                <h1>The Cool Blog</h1>
+            </Link>
         </header>
     )
 }

@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Header from './components/Header'
 import BlogList from './components/BlogList'
+import { Outlet } from "react-router-dom";
 
 function App() {
   const [count, setCount] = useState(0)
@@ -8,7 +9,10 @@ function App() {
   return (
     <>
       <Header />
-      <BlogList />
+      <main>
+        <Outlet />
+      </main>
+      {/* <BlogList /> */}
     </>
   )
 }
