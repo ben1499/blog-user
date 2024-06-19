@@ -10,7 +10,11 @@ function BlogList() {
     const url = "http://localhost:3000";
 
     useEffect(() => {
-        axios.get(`${url}/posts`)
+        axios.get(`${url}/posts`, {
+            params: {
+                is_published: true
+            }
+        })
         .then((res) => {
             setBlogList(res.data.data);
         })

@@ -55,6 +55,17 @@ header {
   margin-top: 16px;
 }
 
+.card > p:first-of-type {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card > p:last-child {
+  margin-top: 8px;
+  font-weight: 300;
+}
+
 .card:hover {
   background-color: aliceblue;
 }
@@ -64,6 +75,10 @@ header {
   width: 80%;
   margin: 70px auto;
   padding: 12px;
+}
+
+.blog-view-container > p:first-of-type {
+  font-weight: 300;
 }
 
 .blog-view-content {
@@ -82,6 +97,11 @@ header {
   background-color: aliceblue;
   padding: 8px;
   margin-bottom: 6px;
+}
+
+.comment > div {
+  font-weight: 300;
+  margin-top: 8px;
 }
 
 .form-control {
