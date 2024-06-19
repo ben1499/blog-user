@@ -15,7 +15,7 @@ function BlogView() {
         post_id: postId
     })
 
-    const url = "http://localhost:3000";
+    const url = import.meta.env.VITE_API_URL;
 
     const fetchComments = () => {
         axios.get(`${url}/posts/${postId}/comments`)
